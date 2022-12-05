@@ -12,11 +12,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "FiraCode Nerd Font:size=12","Font Awesome 6 Brands:size=12","Font Awesome 6 Free:size=12" };
 static const char dmenufont[]       = "FiraCode Nerd Font:size=12";
-static const char col_gray1[]       = "#000000";
-static const char col_gray2[]       = "#000000";
-static const char col_gray3[]       = "#adffc3";
-static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#adffc3";
+static const char col_gray1[]       = "#210063";
+static const char col_gray2[]       = "4e04d1";
+static const char col_gray3[]       = "#ff006f";
+static const char col_gray4[]       = "#210063";
+static const char col_cyan[]        = "#ff006f";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -33,9 +33,11 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "waterfox",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "codeblocks",NULL,	  NULL,		  1 << 3,		0,           -1 },
 	{ "pcmanfm",  NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "discord",  NULL,       NULL,       1 << 4,       0,           -1 },
+	{ "mpv",      NULL,       NULL,       1 << 5,       0,           -1 },
 };
 
 /* layout(s) */
